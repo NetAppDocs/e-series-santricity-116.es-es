@@ -1,0 +1,149 @@
+---
+section: sm-support
+title: Soporte técnico
+entries:
+- title: Centro de soporte
+  entries:
+  - title: Conceptos
+    entries:
+    - title: Información general sobre la función AutoSupport
+      url: "/sm-support/autosupport-feature-overview.html"
+    - title: Flujo de trabajo de la función AutoSupport
+      url: "/sm-support/workflow-for-autosupport.html"
+  - title: Procedimientos
+    entries:
+    - title: Vea información de la cabina de almacenamiento
+      entries:
+      - title: Ver el perfil de la cabina de almacenamiento
+        url: "/sm-support/view-storage-array-profile.html"
+      - title: Ver el inventario de software y firmware
+        url: "/sm-support/view-software-and-firmware-inventory.html"
+    - title: Recopilar datos de diagnóstico
+      entries:
+      - title: Recopilar manualmente datos de soporte
+        url: "/sm-support/collect-support-data-manually.html"
+      - title: Recupere los archivos de soporte de recuperación
+        url: "/sm-support/retrieve-recovery-support-files.html"
+      - title: Recuperar búferes de seguimiento
+        url: "/sm-support/retrieve-trace-buffers.html"
+      - title: Recoja datos de las unidades
+        url: "/sm-support/collect-drive-data.html"
+      - title: Recoja estadísticas de rutas de I/O.
+        url: "/sm-support/collect-i-o-path-statistics.html"
+      - title: Recuperar una imagen de estado
+        url: "/sm-support/retrieve-health-image.html"
+    - title: Realizar una acción de recuperación sobre el estado de la cabina de almacenamiento
+      entries:
+      - title: Ver el registro de sectores ilegibles
+        url: "/sm-support/view-unreadable-sectors-log.html"
+      - title: Vuelva a habilitar puertos de unidad
+        url: "/sm-support/re-enable-drive-ports.html"
+      - title: Desactivar el modo de recuperación
+        url: "/sm-support/clear-recovery-mode.html"
+    - title: Gestionar conexiones iSCSI
+      entries:
+      - title: Ver paquetes de estadísticas de iSCSI
+        url: "/sm-support/view-iscsi-statistics-packages-support.html"
+      - title: Consulte los diferentes tipos de estadísticas de iSCSI
+        url: "/sm-support/view-the-different-types-of-iscsi-statistics.html"
+        entries:
+        - title: Estadísticas de transmisión MAC y recepción MAC
+          url: "/sm-support/mac-transmit-and-mac-receive-statistics.html"
+        - title: Estadísticas de Ethernet TCP/IP
+          url: "/sm-support/ethernet-tcp-ip-statistics.html"
+        - title: Estadísticas de destino iSCSI y estadísticas de iniciador local
+          url: "/sm-support/iscsi-target-statistics-and-local-initiator-statistics.html"
+        - title: Estadísticas de estado operativo de DCBX
+          url: "/sm-support/dcbx-operational-state-statistics.html"
+        - title: Estadísticas TLV de LLDP
+          url: "/sm-support/lldp-tlv-statistics.html"
+        - title: Estadísticas TLV de DCBX
+          url: "/sm-support/dcbx-tlv-statistics.html"
+      - title: Ver sesiones iSCSI
+        url: "/sm-support/view-iscsi-sessions-support.html"
+      - title: Finalice la sesión iSCSI
+        url: "/sm-support/end-iscsi-session-support.html"
+      - title: Ver estadísticas de Iser over InfiniBand
+        url: "/sm-support/view-iser-over-infiniband-statistics-support.html"
+    - title: Gestione conexiones NVMe
+      entries:
+      - title: Ver estadísticas de NVMe over Fabrics
+        url: "/sm-support/view-nvme-over-fabrics-statistics-support.html"
+    - title: Gestione AutoSupport
+      entries:
+      - title: Habilitar o deshabilitar funciones de AutoSupport
+        url: "/sm-support/enable-or-disable-autosupport-features.html"
+      - title: Habilite la ventana de mantenimiento de AutoSupport
+        url: "/sm-support/enable-autosupport-maintenance-window.html"
+      - title: Deshabilite la ventana de mantenimiento AutoSupport
+        url: "/sm-support/disable-autosupport-maintenance-window.html"
+      - title: Configurar el método de entrega de AutoSupport
+        url: "/sm-support/configure-autosupport-delivery-method.html"
+      - title: Programar mensajes de AutoSupport
+        url: "/sm-support/schedule-autosupport-dispatches.html"
+      - title: Envíe mensajes de AutoSupport
+        url: "/sm-support/send-autosupport-dispatches.html"
+      - title: Ver el estado de AutoSupport
+        url: "/sm-support/view-autosupport-status.html"
+      - title: Ver el registro de AutoSupport
+        url: "/sm-support/view-autosupport-log.html"
+  - title: Preguntas frecuentes
+    entries:
+    - title: "¿Qué datos recojo?"
+      url: "/sm-support/which-data-am-i-collecting-in-a-customer-support-bundle.html"
+    - title: "¿Qué indican los datos de sectores ilegibles?"
+      url: "/sm-support/what-does-unreadable-sectors-data-show-me.html"
+    - title: "¿Qué es una imagen de estado?"
+      url: "/sm-support/what-is-a-health-image.html"
+    - title: "¿Qué más debo hacer para configurar o diagnosticar iSCSI?"
+      url: "/sm-support/what-else-do-i-need-to-do-to-configure-or-diagnose-iscsi.html"
+    - title: "¿Qué hacen las funciones de AutoSupport?"
+      url: "/sm-support/what-do-the-autosupport-features-do.html"
+    - title: "¿Qué tipo de datos se recopilan mediante la función AutoSupport?"
+      url: "/sm-support/what-type-of-data-is-collected-through-autosupport.html"
+    - title: "¿Cómo se configura el método de entrega para la función AutoSupport?"
+      url: "/sm-support/how-do-i-configure-the-delivery-method-for-autosupport.html"
+- title: Registro de eventos
+  entries:
+  - title: Conceptos
+    entries:
+    - title: Eventos críticos
+      url: "/sm-support/critical-events.html"
+    - title: Registro de eventos
+      url: "/sm-support/event-log.html"
+  - title: Procedimientos
+    entries:
+    - title: Ver eventos mediante el registro de eventos
+      url: "/sm-support/view-events-using-the-event-log.html"
+- title: Centro de actualizaciones
+  entries:
+  - title: Conceptos
+    entries:
+    - title: Actualizaciones de software y firmware de la controladora
+      url: "/sm-support/controller-software-and-firmware-upgrades.html"
+    - title: Flujo de trabajo de actualización de firmware y software de la controladora
+      url: "/sm-support/workflow-for-controller-software-and-firmware-upgrade.html"
+    - title: Actualización del firmware de la unidad
+      url: "/sm-support/drive-firmware-upgrades.html"
+  - title: Procedimientos
+    entries:
+    - title: Actualice software y firmware
+      url: "/sm-support/upgrade-controller-software-and-firmware.html"
+    - title: Activar el software y el firmware de la controladora
+      url: "/sm-support/activate-controller-software-and-firmware.html"
+    - title: Actualice el firmware de la unidad
+      url: "/sm-support/upgrade-drive-firmware.html"
+    - title: Revisar los posibles errores de actualización de software y firmware
+      url: "/sm-support/review-the-possible-software-and-firmware-upgrade-errors.html"
+  - title: Preguntas frecuentes
+    entries:
+    - title: "¿Qué se debe saber para actualizar el software del SO SANtricity?"
+      url: "/sm-support/what-do-i-need-to-know-before-upgrading-the-santricity-os-software.html"
+    - title: "¿Qué debo saber antes de suspender la sincronización automática de IOM?"
+      url: "/sm-support/what-do-i-need-to-know-before-suspending-iom-auto-synchronization.html"
+    - title: "¿Por qué se procesa tan lentamente la actualización del firmware?"
+      url: "/sm-support/why-is-my-firmware-upgrade-progressing-so-slowly.html"
+    - title: "¿Qué debo saber antes de actualizar el firmware de la unidad?"
+      url: "/sm-support/what-do-i-need-to-know-before-upgrading-drive-firmware.html"
+    - title: "¿Cómo selecciono el tipo de actualización que debo realizar?"
+      url: "/sm-support/how-do-i-choose-which-type-of-upgrade-to-perform.html"

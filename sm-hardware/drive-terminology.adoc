@@ -1,0 +1,110 @@
+---
+permalink: sm-hardware/drive-terminology.html 
+sidebar: sidebar 
+keywords: drive, apply, storage array 
+summary: Conozca la forma en que los términos de unidades se aplican a su cabina de almacenamiento. 
+---
+= Terminología de unidades
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Conozca la forma en que los términos de unidades se aplican a su cabina de almacenamiento.
+
+[cols="1a,3a"]
+|===
+| Componente | Descripción 
+
+
+ a| 
+DA
+ a| 
+La garantía de datos (DA) es una función que comprueba y corrige los errores que se pueden producir durante la transferencia de datos a través de las controladoras hasta las unidades. Garantía de datos se puede habilitar en el nivel del pool o grupo de volúmenes, y los hosts pueden utilizar una interfaz de I/o compatible CON DA como, por ejemplo, Fibre Channel.
+
+
+
+ a| 
+Función Drive Security
+ a| 
+Drive Security es una función de la cabina de almacenamiento que ofrece una capa adicional de seguridad con unidades de cifrado de disco completo (FDE) o unidades de estándar de procesamiento de información federal (FIPS). Cuando estas unidades se usan con la función Drive Security, se requiere una clave de seguridad para acceder a los datos. Cuando se retiran físicamente, las unidades de la cabina no pueden operar hasta que se instalan en otra cabina, instancia en la cual tendrán el estado Security Locked hasta que se proporcione la clave de seguridad correcta.
+
+
+
+ a| 
+Bandeja de unidades
+ a| 
+Una bandeja de unidades, también denominada bandeja de expansión, consta de un conjunto de unidades y dos módulos de I/o (IOM). Los IOM tienen puertos SAS que permiten conectar una bandeja de unidades a una bandeja de controladoras o a otras bandejas de unidades.
+
+
+
+ a| 
+DULBE
+ a| 
+Error de bloque lógico no escrito o desasignado (DULBE) es una opción en las unidades NVMe con la que una cabina de almacenamiento puede desasignar bloques que forman parte de un volumen. Si se desasignan bloques en una unidad, es posible reducir ampliamente el tiempo necesario para inicializar los volúmenes. Asimismo, los hosts pueden desasignar bloques lógicos del volumen mediante el comando Gestión de conjuntos de datos de NVMe.
+
+
+
+ a| 
+Unidades FDE
+ a| 
+Las unidades de cifrado de disco completo (FDE) realizan el cifrado en la unidad de disco en el nivel de hardware. La unidad de disco duro contiene un chip ASIC que cifra los datos durante las escrituras y, a continuación, descifra los datos durante las lecturas.
+
+
+
+ a| 
+Unidades FIPS
+ a| 
+Las unidades con FIPS utilizan estándares de procesamiento de información federal (FIPS) 140-2 nivel 2. Son esencialmente unidades FDE que cumplen con las normas gubernamentales de los Estados Unidos para garantizar algoritmos y métodos de cifrado sólidos. Las unidades FIPS tienen normas de seguridad más rigurosas que las unidades FDE.
+
+
+
+ a| 
+HDD
+ a| 
+Las unidades de disco duro (HDD) son dispositivos de almacenamiento de datos que utilizan discos de metal giratorios con un revestimiento magnético.
+
+
+
+ a| 
+Unidades de repuesto
+ a| 
+Las piezas de repuesto actúan como unidades en espera en los grupos de volúmenes RAID 1, RAID 5 o RAID 6. Son unidades completamente funcionales que no contienen datos. Si se produce un error en una unidad del grupo de volúmenes, la controladora automáticamente reconstruye los datos de la unidad con error en una pieza de repuesto.
+
+
+
+ a| 
+NVMe
+ a| 
+La memoria no volátil rápida (NVMe) es una interfaz designada para dispositivos de almacenamiento basados en flash, por ejemplo, unidades SSD. NVMe reduce la sobrecarga de I/o e incluye mejoras de rendimiento, en comparación con las interfaces de dispositivos lógicos anteriores.
+
+
+
+ a| 
+SAS
+ a| 
+SAS es un protocolo en serie de punto a punto que vincula las controladoras directamente con las unidades de disco.
+
+
+
+ a| 
+Unidades compatibles con la función de seguridad
+ a| 
+Las unidades compatibles con la función de seguridad pueden ser unidades de cifrado de disco completo (FDE) o de estándar de procesamiento de información federal (FIPS) que cifran datos durante la escritura y descifran datos durante la lectura. Estas unidades se consideran Secure-_capable_ porque se pueden usar para obtener más seguridad mediante la función Drive Security. Si está habilitada la función Drive Security para los grupos de volúmenes y pools que se utilizan con estas unidades, las unidades pasan a tener habilitada la función de seguridad-_enabled_.
+
+
+
+ a| 
+Unidades con la función de seguridad habilitada
+ a| 
+Las unidades con la función de seguridad habilitada se usan con Drive Security. Cuando se habilita la función Drive Security y se aplica Drive Security a un pool o un grupo de volúmenes en unidades_ compatibles con la función de seguridad, las unidades pasan a ser seguras__ habilitadas__. El acceso de lectura y escritura solo está disponible a través de una controladora que está configurada con la clave de seguridad correcta. Esta seguridad adicional evita el acceso no autorizado a los datos en una unidad que se quita físicamente de la cabina de almacenamiento.
+
+
+
+ a| 
+SSD
+ a| 
+Los discos de estado sólido (SSD) son dispositivos de almacenamiento de datos que usan memoria de estado sólido (flash) para almacenar datos en forma persistente. Los SSD emulan las unidades de discos duros convencionales y están disponibles con las mismas interfaces que usan las unidades de disco duro.
+
+|===

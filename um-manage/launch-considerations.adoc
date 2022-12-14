@@ -1,0 +1,22 @@
+---
+permalink: um-manage/launch-considerations.html 
+sidebar: sidebar 
+keywords: considerations, for, accessing, santricity, system, manager, 
+summary: Es posible seleccionar una o varias cabinas de almacenamiento y usar la opción Iniciar para abrir SANtricity System Manager cuando se desean configurar y gestionar las cabinas de almacenamiento. 
+---
+= Consideraciones para acceder a System Manager de SANtricity
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible seleccionar una o varias cabinas de almacenamiento y usar la opción Iniciar para abrir SANtricity System Manager cuando se desean configurar y gestionar las cabinas de almacenamiento.
+
+System Manager de SANtricity es una aplicación integrada en las controladoras E2800 o E5700, que está conectada a la red a través de un puerto de gestión Ethernet.
+
+System Manager de SANtricity incluye todas las funciones basadas en cabina para las cabinas E2800 o E5700.
+
+Para acceder a SANtricity System Manager, debe tener una conexión fuera de banda con un cliente de gestión de red en un explorador web.
+
+image::../media/single2800.gif[single2800]

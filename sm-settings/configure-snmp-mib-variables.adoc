@@ -1,0 +1,57 @@
+---
+permalink: sm-settings/configure-snmp-mib-variables.html 
+sidebar: sidebar 
+keywords: snmp alerts, optional, mib, variables, snmp traps, storage array, contact person 
+summary: 'En el caso de las alertas SNMP, tiene la opción de configurar las variables de la base de datos de información de gestión (MIB) que se muestran en las excepciones SNMP. Estas variables pueden mostrar el nombre de la cabina de almacenamiento, su ubicación y una persona de contacto.' 
+---
+= Configure las variables MIB de SNMP
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+En el caso de las alertas SNMP, tiene la opción de configurar las variables de la base de datos de información de gestión (MIB) que se muestran en las excepciones SNMP. Estas variables pueden mostrar el nombre de la cabina de almacenamiento, su ubicación y una persona de contacto.
+
+.Antes de empezar
+El archivo MIB debe copiarse y compilarse en el servidor con la aplicación de servicio SNMP.
+
+Si no tiene un archivo MIB, puede obtenerlo del siguiente modo:
+
+* Vaya a. https://mysupport.netapp.com/site/["Soporte de NetApp"^].
+* Haga clic en *Descargas*.
+* Haga clic en *Software*.
+* Busque el software de gestión (por ejemplo, Administrador del sistema de SANtricity) y, a continuación, haga clic en *Ir* a la derecha.
+* Haga clic en *Ver y descargar* en la última versión.
+* Haga clic en *continuar* en la parte inferior de la página.
+* Acepte el contrato de licencia para usuario final.
+* Desplácese hacia abajo hasta que vea *Archivo MIB para capturas SNMP* y haga clic en el enlace para descargar el archivo.
+
+
+.Acerca de esta tarea
+En esta tarea, se describe cómo definir variables MIB para excepciones SNMP. Estas variables pueden mostrar los siguientes valores, en respuesta a los mensajes GetRequests de SNMP:
+
+* `_sysName_` (nombre para la cabina de almacenamiento)
+* `_sysLocation_` (ubicación de la cabina de almacenamiento)
+* `_sysContact_` (nombre de un administrador)
+
+
+.Pasos
+. Seleccione *MENU:Settings[Alerts]*.
+. Seleccione la ficha *SNMP*.
+. Seleccione *Configurar variables MIB de SNMP*.
++
+Se muestra el cuadro de diálogo Configurar variables MIB de SNMP.
+
+. Introduzca uno o más de los siguientes valores y, a continuación, haga clic en *Guardar*.
++
+** *Nombre* -- el valor de la variable MIB `_sysName_`. Por ejemplo, introduzca un nombre para la cabina de almacenamiento.
+** *Ubicación* -- el valor de la variable MIB `_sysLocation_`. Por ejemplo, introduzca la ubicación de la cabina de almacenamiento.
+** *Contacto* -- el valor de la variable MIB `_sysContact_`. Por ejemplo, introduzca un administrador que sea responsable de la cabina de almacenamiento.
+
+
+
+
+.Resultados
+Estos valores se muestran en los mensajes de captura SNMP en las alertas de la cabina de almacenamiento.

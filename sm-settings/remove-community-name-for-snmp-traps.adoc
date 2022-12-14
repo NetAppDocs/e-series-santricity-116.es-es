@@ -1,0 +1,35 @@
+---
+permalink: sm-settings/remove-community-name-for-snmp-traps.html 
+sidebar: sidebar 
+keywords: remove, community, snmp traps 
+summary: Es posible quitar un nombre de comunidad de las capturas de SNMP. 
+---
+= Quitar un nombre de comunidad de las capturas de SNMP
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible quitar un nombre de comunidad de las capturas de SNMP.
+
+.Pasos
+. Seleccione *MENU:Settings[Alerts]*.
+. Seleccione la ficha *SNMP*.
++
+Los nombres de comunidad y los destinos de captura se muestran en la página Alertas.
+
+. Seleccione *Configurar comunidades*.
++
+Se abre el cuadro de diálogo *Configurar comunidades*.
+
+. Seleccione el nombre de comunidad que desea eliminar y, a continuación, haga clic en el icono *Quitar* (X) situado en el extremo derecho.
++
+Si los destinos de captura están asociados con este nombre de comunidad, el cuadro de diálogo *Confirmar eliminación de comunidad* muestra las direcciones de destino de captura afectadas.
+
+. Confirme la operación y haga clic en *Quitar*.
+
+
+.Resultados
+El nombre de comunidad y su destino de captura asociado se eliminan de la página *Alertas*.

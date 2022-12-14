@@ -1,0 +1,114 @@
+---
+permalink: sm-storage/create-pool-manually.html 
+sidebar: sidebar 
+keywords: create, pool, manually, set, candidates, auto configuration, feature, provide, meet, needs, logical, storage, capacity, necessary, individual, volumes, use, host, application 
+summary: 'Se puede crear un pool manualmente (desde un conjunto de candidatos) si la función Pool Auto Configuration no ofrece un pool que satisfaga las necesidades. Un pool proporciona la capacidad de almacenamiento lógico necesaria desde la cual se pueden crear volúmenes individuales que se pueden utilizar para alojar las aplicaciones.' 
+---
+= Crear un pool manualmente
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Se puede crear un pool manualmente (desde un conjunto de candidatos) si la función Pool Auto Configuration no ofrece un pool que satisfaga las necesidades. Un pool proporciona la capacidad de almacenamiento lógico necesaria desde la cual se pueden crear volúmenes individuales que se pueden utilizar para alojar las aplicaciones.
+
+.Antes de empezar
+* Se deben tener al menos 11 unidades con el mismo tipo de unidad (HDD o SSD).
+* La protección contra pérdida de bandeja requiere que las unidades que componen el pool se coloquen al menos en seis bandejas de unidades distintas y que no haya más de dos unidades en una única bandeja de unidades.
+* La protección contra pérdida de cajón requiere que las unidades que componen el pool se coloquen al menos en cinco cajones diferentes y que el pool tenga la misma cantidad de bandejas de unidades en cada cajón.
+* Al configurar una cabina de almacenamiento EF600, asegúrese de que cada controladora tenga acceso a un número igual de unidades en las primeras 12 ranuras y un número igual de unidades en las últimas 12 ranuras. Esta configuración ayuda a las controladoras a usar ambos autobuses PCIe de la unidad de forma más eficaz. Actualmente, System Manager permite seleccionar unidades en la función Avanzada al crear un grupo de volúmenes. Para la creación de un pool, se recomienda usar todas las unidades de la cabina de almacenamiento.
+
+
+.Pasos
+. Seleccione MENU:almacenamiento[Pools y grupos de volúmenes].
+. Haga clic en MENU:Create[Pool].
++
+Aparecerá el cuadro de diálogo *Crear grupo*.
+
+. Escriba un nombre para el pool.
+. *Opcional:* Si tiene más de un tipo de unidad en la matriz de almacenamiento, seleccione el tipo de unidad que desea utilizar.
++
+En la tabla de resultados, se muestra una lista de todos los pools posibles que se pueden crear.
+
+. Seleccione el candidato de pool que desea utilizar en función de las siguientes características y, a continuación, haga clic en *Crear*.
+
+
+[cols="2*"]
+|===
+| Característica | Uso 
+
+
+ a| 
+Capacidad libre
+ a| 
+Muestra la capacidad libre del candidato de pool en GIB. Seleccione un candidato de pool con la capacidad que necesita el almacenamiento de la aplicación.
+
+La capacidad de conservación (reserva) también se distribuye en todo el pool y no forma parte de la cantidad de capacidad libre.
+
+
+
+ a| 
+Unidades totales
+ a| 
+Indica la cantidad de unidades disponibles en el candidato de pool.
+
+System Manager reserva automáticamente tantas unidades como sea posible para la capacidad de conservación (por cada seis unidades de un pool, System Manager reserva una unidad para la capacidad de conservación).
+
+Cuando se produce un fallo de unidad, la capacidad de conservación se usa para contener los datos reconstruidos.
+
+
+
+ a| 
+Compatible con la función de seguridad
+ a| 
+Indica si este candidato de pool se compone íntegramente de unidades compatibles con la función de seguridad, que pueden ser de cifrado de disco completo (FDE) o de estándar de procesamiento de información federal (FIPS).
+
+* Se puede proteger el pool con Drive Security, pero todas las unidades deben ser compatibles con la función de seguridad para poder usar esta función.
+* Si desea crear un pool solo para FDE, busque *Sí - FDE* en la columna compatible con la función de seguridad. Si desea crear un pool sólo para FIPS, busque *Sí - FIPS* en la columna compatible con la función de seguridad.
+* Se puede crear un pool compuesto por unidades compatibles o no con la función de seguridad, o que tengan una combinación de niveles de seguridad. Si alguna de las unidades del pool no es compatible con la función de seguridad, no se podrá establecer la seguridad del pool.
+
+
+
+
+ a| 
+Habilitar seguridad?
+ a| 
+Ofrece la opción de habilitar la función Drive Security con unidades que sean compatibles con la función de seguridad. Si el pool es compatible con la función de seguridad y se creó una clave de seguridad, se podrá habilitar la seguridad al seleccionar la casilla de comprobación.
+
+[NOTE]
+====
+La única manera de quitar Drive Security después de haberse habilitado es eliminar el pool y borrar las unidades.
+
+====
+
+
+ a| 
+Compatible con DA
+ a| 
+Indica si está disponible la función Data Assurance (DA) para este candidato de pool. DA comprueba y corrige los errores que se pueden producir durante la transferencia de datos a través de las controladoras hasta las unidades.
+
+Si desea usar DA, seleccione un pool que sea compatible con ESTA función. Esta opción solo está disponible si está habilitada la función DA.
+
+Un pool puede contener unidades que son compatibles con DA o que no lo son, pero todas las unidades deben ser compatibles con DA para poder usar esta función.
+
+
+
+ a| 
+Protección contra pérdida de bandeja
+ a| 
+Indica si la protección contra pérdida de bandeja está disponible.
+
+La protección contra pérdida de bandeja garantiza la accesibilidad a los datos de los volúmenes de un pool en caso de que se produzca una pérdida total de comunicación con una única bandeja de unidades.
+
+
+
+ a| 
+Protección contra pérdida de cajón
+ a| 
+Muestra si la protección contra pérdida de cajón está disponible, que solo se ofrece si se utiliza una bandeja de unidades que contiene cajones.
+
+La protección contra pérdida de cajón garantiza la accesibilidad a los datos de los volúmenes de un pool en caso de que se produzca una pérdida total de comunicación con un cajón único de una bandeja de unidades.
+
+|===

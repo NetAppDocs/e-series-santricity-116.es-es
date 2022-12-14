@@ -1,0 +1,63 @@
+---
+section: sm-interface
+title: Interfaz principal
+entries:
+- title: Página de inicio
+  url: "/sm-interface/home-page.html"
+- title: Novedades
+  url: "/whats-new.html"
+- title: Asistente de configuración
+  entries:
+  - title: Conceptos
+    entries:
+    - title: Información general del asistente de configuración
+      url: "/sm-interface/setup-wizard-overview.html"
+    - title: Terminología del asistente de configuración
+      url: "/sm-interface/setup-wizard-terminology.html"
+  - title: Preguntas frecuentes
+    entries:
+    - title: "¿Qué sucede si no veo todos mis componentes de hardware?"
+      url: "/sm-interface/what-if-i-dont-see-all-of-my-hardware-components.html"
+    - title: "¿Qué sucede si no puedo ver todos mis hosts?"
+      url: "/sm-interface/what-if-i-dont-see-all-of-my-hosts.html"
+    - title: "¿Cómo ayuda la identificación de aplicaciones a gestionar la cabina
+        de almacenamiento?"
+      url: "/sm-interface/how-does-identifying-applications-help-me-manage-my-storage-array.html"
+    - title: "¿Qué es una carga de trabajo?"
+      url: "/sm-interface/what-is-a-workload.html"
+    - title: "¿Cómo se configura el método de entrega para AutoSupport?"
+      url: "/sm-interface/how-do-i-configure-the-delivery-method-for-autosupport-new.html"
+    - title: "¿Cómo saber si debe aceptarse la configuración de pool recomendada?"
+      url: "/sm-interface/how-do-i-know-if-i-should-accept-the-recommended-pool-configuration.html"
+    - title: System Manager no detectó ningún host. ¿Qué debo hacer?
+      url: "/sm-interface/system-manager-has-not-detected-any-hosts-what-do-i-do.html"
+- title: Administración de la cabina de almacenamiento
+  entries:
+  - title: Conceptos
+    entries:
+    - title: Información general de la cabina de almacenamiento
+      url: "/sm-interface/storage-array-overview.html"
+    - title: Protección con contraseña de administrador
+      url: "/sm-interface/administrator-password-protection.html"
+    - title: Notificación de problemas
+      url: "/sm-interface/problem-notification.html"
+    - title: Operaciones en curso
+      url: "/sm-interface/operations-in-progress.html"
+  - title: Procedimientos
+    entries:
+    - title: Establezca unidades predeterminadas para los valores de capacidad
+      url: "/sm-interface/set-default-units-for-capacity-values.html"
+    - title: Establecer el plazo predeterminado para los gráficos de rendimiento
+      url: "/sm-interface/set-default-time-frame-for-performance-graphs.html"
+    - title: Recuperarse de problemas mediante Recovery Guru
+      url: "/sm-interface/recover-from-problems-using-recovery-guru.html"
+    - title: Ver y actuar durante operaciones en curso
+      url: "/sm-interface/view-and-act-on-operations-in-progress.html"
+  - title: Preguntas frecuentes
+    entries:
+    - title: "¿Dónde puedo obtener más información sobre las preferencias de presentación?"
+      url: "/sm-interface/where-can-i-find-more-information-about-display-preferences.html"
+    - title: "¿Qué exploradores son compatibles?"
+      url: "/sm-interface/what-are-the-supported-browsers.html"
+    - title: "¿Cuáles son los métodos abreviados de teclado?"
+      url: "/sm-interface/what-are-the-keyboard-shortcuts.html"

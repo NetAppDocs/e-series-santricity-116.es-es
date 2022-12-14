@@ -1,0 +1,61 @@
+---
+permalink: sm-support/lldp-tlv-statistics.html 
+sidebar: sidebar 
+keywords: statistics, select, link, discovery, protocol, length 
+summary: Estadísticas TLV de LLDP 
+---
+= Estadísticas TLV de LLDP
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+Cuando selecciona la opción Link Layer Discovery Protocol (LLDP) Type Length Value (TLV) Statistics, se muestran estas estadísticas. Se muestran dos conjuntos de estadísticas: Una para el dispositivo local y otra para el remoto. El dispositivo local hace referencia a la controladora. El dispositivo remoto hace referencia al dispositivo del mismo nivel al que está conectada la controladora, normalmente un switch.
+
+[cols="2*"]
+|===
+| Estadística | Definición 
+
+
+ a| 
+Puerto de host iSCSI
+ a| 
+Indica la ubicación del puerto de host detectado en el formato N.° de controladora, N.° de puerto.
+
+
+
+ a| 
+Identificador del chasis
+ a| 
+Indica el identificador del chasis.
+
+
+
+ a| 
+Subtipo del identificador del chasis
+ a| 
+Indica el subtipo del identificador del chasis.
+
+
+
+ a| 
+Identificador del puerto
+ a| 
+Indica el identificador del puerto.
+
+
+
+ a| 
+Subtipo del identificador del puerto
+ a| 
+Indica el subtipo del identificador del puerto.
+
+
+
+ a| 
+Tiempo de vida
+ a| 
+Indica la cantidad de segundos que el agente LLDP receptor considera válida la información.
+
+|===
+Es posible encontrar más estadísticas de TLV de LLDP en el archivo de captura de estado.

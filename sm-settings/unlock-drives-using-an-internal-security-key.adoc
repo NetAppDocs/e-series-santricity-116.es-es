@@ -1,0 +1,55 @@
+---
+permalink: sm-settings/unlock-drives-using-an-internal-security-key.html 
+sidebar: sidebar 
+keywords: secure, enable, storage array, appropriate, importing, new storage, drive 
+summary: Si mueve unidades con la función de seguridad habilitada de una cabina de almacenamiento a otra, debe importar la clave de seguridad adecuada a la nueva cabina de almacenamiento. Al importar la clave, se desbloquean los datos de las unidades. 
+---
+= Desbloquee las unidades mediante una clave de seguridad
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Si mueve unidades con la función de seguridad habilitada de una cabina de almacenamiento a otra, debe importar la clave de seguridad adecuada a la nueva cabina de almacenamiento. Al importar la clave, se desbloquean los datos de las unidades.
+
+.Antes de empezar
+* La cabina de almacenamiento de destino (donde se moverán las unidades) ya debe tener una clave de seguridad configurada. Las unidades migradas se volverán a asignar una clave a la cabina de almacenamiento objetivo.
+* Debe conocer la clave de seguridad asociada con las unidades que desea desbloquear.
+* El archivo de claves de seguridad está disponible en el cliente de gestión (el sistema con un explorador que se utilizó para acceder a System Manager). Si mueve las unidades a una cabina de almacenamiento gestionada por otro sistema, debe mover el archivo de claves de seguridad a ese cliente de gestión.
+
+
+.Acerca de esta tarea
+En esta tarea, se describe cómo desbloquear los datos de las unidades con la función de seguridad habilitada que se hayan eliminado de una cabina de almacenamiento y se hayan vuelto a instalar en otra. Una vez que la cabina detecta las unidades, aparece la condición "Needs Attention" junto con el estado "Security Key Needed" para estas unidades reubicadas. Para desbloquear los datos de la unidad, importe la clave de seguridad en la cabina de almacenamiento. Durante este proceso, se selecciona el archivo de claves de seguridad y se introduce la frase de contraseña para la clave.
+
+[NOTE]
+====
+La frase de contraseña no es la misma que la contraseña de administrador de la cabina de almacenamiento.
+
+====
+Si se instalan otras unidades con la función de seguridad habilitada en la nueva cabina de almacenamiento, estas podrían usar una clave de seguridad distinta de la que se está importando. Durante el proceso de importación, la clave de seguridad antigua se usa únicamente para desbloquear los datos de las unidades que se instalan. Cuando el proceso de desbloqueo se realiza correctamente, se vuelve a asignar una clave de seguridad de cabina de almacenamiento de destino a las unidades recién instaladas.
+
+.Pasos
+. Seleccione MENU:Settings[System].
+. En *Gestión de claves de seguridad*, seleccione *Desbloquear unidades seguras*.
++
+Se abre el cuadro de diálogo Desbloquear unidades seguras. Todas las unidades que requieren una clave de seguridad se muestran en la tabla.
+
+. *Opcional:* pase el ratón sobre un número de unidad para ver la ubicación de la unidad (número de bandeja y número de bahía).
+. Haga clic en *examinar* y, a continuación, seleccione el archivo de claves de seguridad correspondiente a la unidad que desea desbloquear.
++
+El archivo de claves seleccionado aparece en el cuadro de diálogo.
+
+. Introduzca la frase de contraseña asociada con este archivo de claves.
++
+Los caracteres introducidos están enmascarados.
+
+. Haga clic en *Desbloquear*.
++
+Si la operación de desbloqueo se realiza correctamente, en el cuadro de diálogo se muestra un mensaje que indica que se desbloquearon las unidades seguras asociadas.
+
+
+
+.Resultados
+Cuando todas las unidades se bloquean y después se desbloquean, se reinicia cada controladora de la cabina de almacenamiento. Sin embargo, si ya existen algunas unidades desbloqueadas en la cabina de almacenamiento de destino, las controladoras no se reinician.

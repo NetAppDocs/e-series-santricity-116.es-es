@@ -1,0 +1,14 @@
+---
+permalink: sm-storage/why-arent-these-volumes-associated-with-a-workload.html 
+sidebar: sidebar 
+keywords: volumes, associate, workload, create, use, command line, interface, migrate, import, export, different, storage, array 
+summary: 'Los volúmenes no se asocian a una carga de trabajo si se los creó mediante la interfaz de línea de comandos (CLI) o si se migraron (importaron/exportaron) desde una cabina de almacenamiento diferente.' 
+---
+= ¿Por qué estos volúmenes no están asociados con una carga de trabajo?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Los volúmenes no se asocian a una carga de trabajo si se los creó mediante la interfaz de línea de comandos (CLI) o si se migraron (importaron/exportaron) desde una cabina de almacenamiento diferente.

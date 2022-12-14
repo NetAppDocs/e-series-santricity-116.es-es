@@ -1,0 +1,40 @@
+---
+permalink: sm-settings/what-do-i-need-to-know-before-creating-a-security-key.html 
+sidebar: sidebar 
+keywords: security, key, storage array, unauthorized access 
+summary: Las controladoras y unidades con seguridad habilitada comparten una clave de seguridad dentro de una cabina de almacenamiento. Si se quita una unidad con la función de seguridad habilitada de la cabina de almacenamiento, la clave de seguridad protege los datos de un acceso no autorizado. 
+---
+= ¿Qué debo saber antes de crear una clave de seguridad?
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Las controladoras y unidades con seguridad habilitada comparten una clave de seguridad dentro de una cabina de almacenamiento. Si se quita una unidad con la función de seguridad habilitada de la cabina de almacenamiento, la clave de seguridad protege los datos de un acceso no autorizado.
+
+Puede crear y gestionar claves de seguridad mediante uno de los siguientes métodos:
+
+* Gestión de claves internas en la memoria persistente de la controladora.
+* Gestión de claves externas en un servidor de gestión de claves externo.
+
+
+Antes de crear una clave de seguridad interna, debe hacer lo siguiente:
+
+. Instale unidades compatibles con la función de seguridad en la cabina de almacenamiento. Estas unidades pueden ser de cifrado de disco completo (FDE) o de estándar de procesamiento de información federal (FIPS).
+. Asegúrese de que la función Drive Security esté habilitada. Si fuera necesario, comuníquese con el proveedor de almacenamiento para pedir indicaciones sobre cómo habilitar la función Drive Security.
+
+
+Luego, podrá crear una clave de seguridad interna, lo que implica definir un identificador y una frase de contraseña. El identificador es una frase que está asociada con la clave de seguridad, y se almacena en la controladora y en todas las unidades asociadas con la clave. La frase de contraseña se utiliza para cifrar la clave de seguridad con fines de backup. Una vez que haya terminado, la clave de seguridad se almacena en una ubicación no accesible de la controladora. Es posible crear grupos de volúmenes o pools con la función de seguridad habilitada, o bien habilitar la seguridad en grupos de volúmenes o pools existentes.
+
+Antes de crear una clave de seguridad externa, debe hacer lo siguiente:
+
+. Instale unidades compatibles con la función de seguridad en la cabina de almacenamiento. Estas unidades pueden ser de cifrado de disco completo (FDE) o de estándar de procesamiento de información federal (FIPS).
+. Asegúrese de que la función Drive Security esté habilitada. Si fuera necesario, comuníquese con el proveedor de almacenamiento para pedir indicaciones sobre cómo habilitar la función Drive Security.
+. Complete y descargue una solicitud de firma de certificación (CSR) de cliente para la autenticación entre la cabina de almacenamiento y el servidor de gestión de claves. Vaya a *MENU:Configuración[certificados > Gestión de claves > completar CSR]*.
+. Cree y descargue un certificado de cliente desde el servidor de gestión de claves con el archivo CSR descargado.
+. Asegúrese de que el certificado de cliente y una copia del certificado para el servidor de gestión de claves estén disponibles en el host local.
+
+
+Luego, podrá crear una clave externa, lo que implica definir la dirección IP del servidor de gestión de claves y el número de puerto para las comunicaciones KMIP. Durante este proceso, también debe cargar los archivos de certificado. Una vez que haya terminado, el sistema se conecta al servidor de gestión de claves con las credenciales introducidas. Es posible crear grupos de volúmenes o pools con la función de seguridad habilitada, o bien habilitar la seguridad en grupos de volúmenes o pools existentes.

@@ -1,0 +1,69 @@
+---
+permalink: sm-settings/configure-snmp-alerts.html 
+sidebar: sidebar 
+keywords: configuration, snmp alerts, identification, one server, storage array, snmp traps, community name, ip address 
+summary: 'Para configurar alertas del protocolo simple de gestión de redes (SNMP), debe identificar al menos un servidor en el que el monitor de eventos de la cabina de almacenamiento pueda enviar capturas SNMP. La configuración requiere un nombre de comunidad y una dirección IP para el servidor.' 
+---
+= Configurar las comunidades y los destinos para las alertas SNMP
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Para configurar alertas del protocolo simple de gestión de redes (SNMP) se debe identificar al menos un servidor en el que el monitor de eventos de la cabina de almacenamiento pueda enviar capturas SNMP. La configuración requiere un nombre de comunidad y una dirección IP para el servidor.
+
+.Antes de empezar
+* Debe configurarse un servidor de red con una aplicación de servicio SNMP. Es necesario tener la dirección de red de este servidor (ya sea una dirección IPv4 o IPv6), de manera que el monitor de eventos pueda enviar mensajes de captura a esa dirección. Es posible usar más de un servidor (se permiten hasta 10 servidores).
+* Debe crearse un nombre de comunidad, que consiste únicamente en caracteres ASCII imprimibles. Un administrador de red suele crear el nombre de comunidad, que es una cadena que actúa como contraseña para los servidores de red. Es posible crear hasta 256 comunidades.
+* El archivo de base de datos de información de gestión (MIB) se copió y compiló en el servidor con la aplicación de servicio SNMP. Este archivo MIB define los datos que se están supervisando y gestionando.
++
+Si no tiene el archivo MIB, puede obtenerlo en el sitio de soporte de NetApp:
+
++
+** Vaya a. https://mysupport.netapp.com/site/["Soporte de NetApp"^].
+** Haga clic en *Descargas*.
+** Haga clic en *Software*.
+** Busque el software de gestión (por ejemplo, Administrador del sistema de SANtricity) y, a continuación, haga clic en *Ir* a la derecha.
+** Haga clic en ** Ver y descargar** en la última versión.
+** Haga clic en *continuar* en la parte inferior de la página.
+** Acepte el contrato de licencia para usuario final.
+** Desplácese hacia abajo hasta que vea *Archivo MIB para capturas SNMP* y haga clic en el enlace para descargar el archivo.
+
+
+
+
+.Acerca de esta tarea
+En esta tarea, se describe cómo identificar el servidor SNMP para el destino de capturas y, a continuación, poner a prueba la configuración.
+
+.Pasos
+. Seleccione *MENU:Settings[Alerts]*.
+. Seleccione la ficha *SNMP*.
++
+Si aún no se configuró la comunidad, se muestra "Configure Communities" en la pestaña SNMP.
+
+. Seleccione *Configurar comunidades*.
++
+Se abre el cuadro de diálogo *Configurar comunidades*.
+
+. En el campo *Nombre de comunidad*, introduzca una o más cadenas de comunidad para los servidores de red y, a continuación, haga clic en *Guardar*.
++
+En la página Alertas, se muestra "Añadir destinos de captura".
+
+. Seleccione *Añadir destinos de captura*.
++
+Se abre el cuadro de diálogo *Agregar destinos de captura*.
+
+. Introduzca uno o más destinos de captura, seleccione los nombres de comunidad asociados y, a continuación, haga clic en *Agregar*.
++
+** *Destino de captura* -- Introduzca una dirección IPv4 o IPv6 del servidor que ejecuta un servicio SNMP.
+** *Nombre de comunidad* -- en el menú desplegable, seleccione el nombre de comunidad para este destino de captura. (Si definió solo un nombre de comunidad, ese nombre ya aparece en este campo.)
+** *Enviar captura de fallo de autenticación* -- Seleccione esta opción (la casilla de verificación) si desea alertar al destino de la captura cada vez que se rechace una solicitud SNMP debido a un nombre de comunidad no reconocido. Después de hacer clic en *Agregar*, los destinos de captura y los nombres de comunidad asociados aparecen en la ficha *SNMP* de la página *Alertas*.
+
+
+. Para asegurarse de que una captura es válida, seleccione un destino de captura de la tabla y, a continuación, haga clic en *probar destino de captura* para enviar una captura de prueba a la dirección configurada.
+
+
+.Resultados
+El monitor de eventos envía capturas SNMP a los servidores cada vez que ocurre un evento que genera alertas.

@@ -1,0 +1,45 @@
+---
+permalink: um-admin/home-page-unified.html 
+sidebar: sidebar 
+keywords: unified, manager, web, interface, allow, manage, multiple, storage, arrays, single, view 
+summary: Unified Manager es una interfaz basada en Web que permite gestionar varias cabinas de almacenamiento en una sola vista. 
+---
+= Información general de la interfaz
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager es una interfaz basada en Web que permite gestionar varias cabinas de almacenamiento en una sola vista.
+
+
+
+== Página principal
+
+Al iniciar sesión en Unified Manager, la página principal se abre en *gestionar - todo*. En esta página, puede desplazarse por una lista de cabinas de almacenamiento detectadas en la red, ver su estado y realizar operaciones en una sola cabina o en un grupo de cabinas.
+
+
+
+== Barra lateral Navegación
+
+La barra lateral de navegación incluye lo siguiente:
+
+* *Gestionar*: Permite detectar las cabinas de almacenamiento en la red, iniciar System Manager de SANtricity para una cabina, importar la configuración de una cabina a varias, y gestionar grupos de cabinas. Marque las casillas de comprobación junto a los nombres de las cabinas para realizar distintas operaciones, como importar configuraciones y crear grupos de cabinas. Los tres puntos al final de cada fila permiten acceder al menú en línea con las operaciones para cada cabina, por ejemplo, las operaciones de cambio de nombre.
+* *Operaciones* -- Ver el progreso de las operaciones por lotes, como importar la configuración de una matriz a otra.
++
+[NOTE]
+====
+Algunas operaciones no están disponibles si una cabina de almacenamiento no tiene un estado óptimo.
+
+====
+* *Administración de certificados* -- Administrar certificados para autenticar entre exploradores y clientes.
+* *Access Management* -- establecer la autenticación de usuario para la interfaz de Unified Manager.
+* *Soporte* -- Ver opciones de soporte técnico, recursos y contactos.
+
+
+
+
+== Funciones de banner
+
+En el banner superior, puede acceder al menú de Ayuda y a otra documentación de la interfaz de Unified Manager. También puede acceder a las opciones de administración que están disponibles en el menú desplegable junto a su nombre de inicio de sesión.

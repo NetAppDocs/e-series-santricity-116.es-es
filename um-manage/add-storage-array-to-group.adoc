@@ -1,0 +1,22 @@
+---
+permalink: um-manage/add-storage-array-to-group.html 
+sidebar: sidebar 
+keywords: add, storage, array, to, group, manage, 
+summary: Es posible añadir una o varias cabinas de almacenamiento a un grupo creado por un usuario. 
+---
+= Añadir una cabina de almacenamiento a un grupo
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible añadir una o varias cabinas de almacenamiento a un grupo creado por un usuario.
+
+.Pasos
+. En la vista principal, seleccione *gestionar* y, a continuación, seleccione el grupo al que desea agregar matrices de almacenamiento.
+. Seleccione menú:gestionar grupos[Añadir cabinas de almacenamiento a grupo].
+. Seleccione las cabinas de almacenamiento que desea añadir al grupo.
+. Haga clic en *Agregar.*
+

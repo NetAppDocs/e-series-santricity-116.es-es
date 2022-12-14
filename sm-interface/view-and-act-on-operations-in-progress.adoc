@@ -1,0 +1,38 @@
+---
+permalink: sm-interface/view-and-act-on-operations-in-progress.html 
+sidebar: sidebar 
+keywords: view, action, long-run, operations, progress 
+summary: Para ver y actuar durante operaciones de ejecución prolongada, use la página Operaciones en curso. 
+---
+= Ver y actuar durante operaciones en curso
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Para ver y actuar durante operaciones de ejecución prolongada, use la página Operaciones en curso.
+
+.Acerca de esta tarea
+Para cada operación enumerada en la página Operations, se muestran un porcentaje de finalización y el tiempo restante estimado para completar la operación. En algunos casos, es posible detener una operación o colocarla en una prioridad superior o inferior. También es posible borrar una operación de copia de volumen de la lista.
+
+.Pasos
+. En la página *Inicio*, seleccione *Mostrar operaciones en curso*.
++
+Aparece la página *Operaciones en curso*.
+
+. Si lo desea, utilice los vínculos de la columna *acciones* para detener o cambiar la prioridad de una operación.
++
+[CAUTION]
+====
+Lea todo el texto de advertencia proporcionado en los cuadros de diálogo, en particular cuando detiene una operación.
+
+====
++
+Es posible detener una operación de copia de volumen o cambiar su prioridad.
+
+. Una vez completada la operación de copia de volumen, puede seleccionar *Borrar* para eliminarla de la lista.
++
+En la parte superior de la página *Inicio*, cuando una operación se completa, se muestran un mensaje informativo y un icono amarillo con una llave inglesa. Este mensaje incluye un enlace que le permite borrar la operación de la página *Operaciones en curso*.
+
+

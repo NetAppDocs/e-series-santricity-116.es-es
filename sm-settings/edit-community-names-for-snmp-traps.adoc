@@ -1,0 +1,41 @@
+---
+permalink: sm-settings/edit-community-names-for-snmp-traps.html 
+sidebar: sidebar 
+keywords: edit, community, names, snmp traps, destination 
+summary: Puede editar nombres de comunidades para capturas SNMP y también asociar un nombre de comunidad diferente para un destino de captura SNMP. 
+---
+= Editar nombres de comunidad para capturas SNMP
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Puede editar nombres de comunidades para capturas SNMP y también asociar un nombre de comunidad diferente para un destino de captura SNMP.
+
+.Antes de empezar
+Debe crearse un nombre de comunidad, que consiste únicamente en caracteres ASCII imprimibles. Un administrador de red crea el nombre de comunidad, que es una cadena que actúa como contraseña para los servidores de red.
+
+.Pasos
+. Seleccione *MENU:Settings[Alerts]*.
+. Seleccione la ficha *SNMP*.
++
+Los destinos de capturas y los nombres de comunidad aparecen en la tabla.
+
+. Edite los nombres de comunidad de la siguiente manera:
++
+** Para editar un nombre de comunidad, seleccione *Configurar comunidades*. Introduzca el nuevo nombre de comunidad y haga clic en *Guardar*. Los nombres de comunidades deben consistir únicamente en caracteres ASCII imprimibles.
+** Para asociar un nombre de comunidad a un nuevo destino de captura, seleccione el nombre de comunidad de la tabla y, a continuación, haga clic en el icono *Editar* (lápiz) situado en el extremo derecho. En la lista desplegable Nombre de comunidad, seleccione un nombre de comunidad nuevo para un destino de captura SNMP y, a continuación, haga clic en el icono *Guardar* (Marca de verificación).
++
+[NOTE]
+====
+Si desea cancelar los cambios, seleccione el icono *Cancelar* (X).
+
+====
+
+
+
+
+.Resultados
+La ficha *SNMP* de la página *Alertas* muestra las comunidades actualizadas.

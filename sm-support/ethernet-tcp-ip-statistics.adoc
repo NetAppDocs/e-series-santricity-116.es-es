@@ -1,0 +1,192 @@
+---
+permalink: sm-support/ethernet-tcp-ip-statistics.html 
+sidebar: sidebar 
+keywords: ethernet, statistics, definition, statistics, transmitted, byte, expired 
+summary: Estadísticas de Ethernet TCP/IP 
+---
+= Estadísticas de Ethernet TCP/IP
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+Cuando se seleccionan las estadísticas de Ethernet TCP/IP, se muestran las estadísticas de TCP en esta tabla. Es posible ver cada una de las estadísticas como estadísticas sin configurar o estadísticas de base.
+
+[cols="2*"]
+|===
+| Estadística | Definición 
+
+
+ a| 
+TXS
+ a| 
+Número de segmentos transmitidos
+
+
+
+ a| 
+TxB
+ a| 
+Número de bytes transmitidos
+
+
+
+ a| 
+RTxTE
+ a| 
+Número de retransmisiones de temporizador vencidas
+
+
+
+ a| 
+TxDACK
+ a| 
+Número de transmisiones de ACK retrasadas
+
+
+
+ a| 
+TxACK
+ a| 
+Número de transmisiones de ACK
+
+
+
+ a| 
+Rxs
+ a| 
+Número de segmentos recibidos
+
+
+
+ a| 
+RXB
+ a| 
+Número de bytes recibidos
+
+
+
+ a| 
+RxDACK
+ a| 
+Número de ACK duplicados recibidos
+
+
+
+ a| 
+RxACK
+ a| 
+Número de ACK recibidos
+
+
+
+ a| 
+RxSEC
+ a| 
+Número de errores de segmento recibidos
+
+
+
+ a| 
+RxSOOC
+ a| 
+Número de segmentos fuera de servicio recibidos
+
+
+
+ a| 
+RxWP
+ a| 
+Número de sondas de ventana recibidas
+
+
+
+ a| 
+RxWU
+ a| 
+Número de actualizaciones de ventana recibidas
+
+|===
+Cuando se seleccionan las estadísticas de Ethernet TCP/IP, se muestran las estadísticas de IP en esta tabla.
+
+[cols="2*"]
+|===
+| Estadística | Definición 
+
+
+ a| 
+TxP
+ a| 
+Número de paquetes transmitidos
+
+
+
+ a| 
+TxB
+ a| 
+Número de bytes transmitidos
+
+
+
+ a| 
+TxF
+ a| 
+Número de fragmentos transmitidos
+
+
+
+ a| 
+RXP
+ a| 
+Número de paquetes recibidos. Seleccione *Mostrar IPv4* para mostrar el número de paquetes IPv4 recibidos. Seleccione *Mostrar IPv6* para mostrar el número de paquetes IPv6 recibidos.
+
+
+
+ a| 
+RXB
+ a| 
+Número de bytes recibidos
+
+
+
+ a| 
+RXF
+ a| 
+Número de fragmentos recibidos
+
+
+
+ a| 
+RxPE
+ a| 
+Número de errores de paquete recibidos
+
+
+
+ a| 
+RECUPERACIÓN ANTE DESASTRES
+ a| 
+Número de reconstituciones de datagrama
+
+
+
+ a| 
+DRE-OLFC
+ a| 
+Número de errores de reconstitución de datagramas con fragmentos superpuestos
+
+
+
+ a| 
+DRE-OOFC
+ a| 
+Número de errores de reconstitución de datagramas con fragmentos fuera de servicio
+
+
+
+ a| 
+DRE-TOC
+ a| 
+Número de errores de reconstitución de datagramas con tiempo de espera agotado
+
+|===

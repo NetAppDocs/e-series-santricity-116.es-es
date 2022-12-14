@@ -1,0 +1,35 @@
+---
+permalink: sm-hardware/allow-remote-login.html 
+sidebar: sidebar 
+keywords: remote, login, lan, outside, ssh session, change settings, controller 
+summary: El inicio de sesión remoto permite que los usuarios fuera de la red de área local inicien una sesión SSH y cambien la configuración en la controladora. 
+---
+= Permitir inicio de sesión remoto
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+El inicio de sesión remoto permite que los usuarios fuera de la red de área local inicien una sesión SSH y cambien la configuración en la controladora.
+
+[CAUTION]
+====
+*Riesgo de seguridad* -- por razones de seguridad, active el inicio de sesión remoto para su uso exclusivo por parte del soporte técnico.
+
+====
+.Pasos
+. Seleccione *hardware*.
+. Si el gráfico muestra las unidades, haga clic en *Mostrar parte posterior de la bandeja*.
++
+El gráfico cambia y muestra las controladoras en lugar de las unidades.
+
+. Haga clic en la controladora para la que desea habilitar el inicio de sesión remoto.
++
+Aparece el menú contextual de la controladora.
+
+. Seleccione *Cambiar inicio de sesión remoto* y confirme que desea realizar la operación.
+
+
+.Resultados
+Después de que el soporte técnico termine de solucionar problemas, siga este mismo procedimiento para deshabilitar el inicio de sesión remoto. Al deshabilitar el inicio de sesión remoto, se cierran todas las sesiones SSH vigentes y se rechazan todas las solicitudes de inicio de sesión nuevas.

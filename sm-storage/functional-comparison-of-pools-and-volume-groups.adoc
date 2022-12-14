@@ -1,0 +1,215 @@
+---
+permalink: sm-storage/functional-comparison-of-pools-and-volume-groups.html 
+sidebar: sidebar 
+keywords: function, purpose, pool, volume, group, same, objects, set, drives, logically, together, storage, array, create, host, access 
+summary: La función y el objetivo de un pool y un grupo de volúmenes son los mismos. Ambos objetos son un conjunto de unidades agrupadas lógicamente en una cabina de almacenamiento, y se usan para crear volúmenes a los que puede acceder un host. 
+---
+= Comparación funcional de pools y grupos de volúmenes
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La función y el objetivo de un pool y un grupo de volúmenes son los mismos. Ambos objetos son un conjunto de unidades agrupadas lógicamente en una cabina de almacenamiento, y se usan para crear volúmenes a los que puede acceder un host.
+
+En la siguiente tabla, se ofrece información para ayudar a decidir si un pool o un grupo de volúmenes es lo que mejor se adapta a sus necesidades de almacenamiento.
+
+[cols="3*""]
+|===
+| Función | Piscina | Grupo de volúmenes 
+
+
+ a| 
+Compatibilidad con diferentes niveles de RAID
+ a| 
+No Siempre RAID 6.
+ a| 
+Sí. RAID 0, 1, 10, 5 y 6 disponibles.
+
+
+
+ a| 
+Compatibilidad con volúmenes finos
+ a| 
+Sí
+ a| 
+No
+
+
+
+ a| 
+Compatibilidad con cifrado de disco completo (FDE)
+ a| 
+Sí
+ a| 
+Sí
+
+
+
+ a| 
+Compatibilidad con Data Assurance (DA)
+ a| 
+Sí
+ a| 
+Sí
+
+
+
+ a| 
+Compatibilidad con protección contra pérdida de bandeja
+ a| 
+Sí
+ a| 
+Sí
+
+
+
+ a| 
+Compatibilidad con protección contra pérdida de cajón
+ a| 
+Sí
+ a| 
+Sí
+
+
+
+ a| 
+Compatibilidad con velocidades de unidad mixtas
+ a| 
+Se recomienda que sea la misma, pero no es obligatorio. La unidad más lenta determina la velocidad de todas las unidades.
+ a| 
+Se recomienda que sea la misma, pero no es obligatorio. La unidad más lenta determina la velocidad de todas las unidades.
+
+
+
+ a| 
+Compatible con capacidad de unidad mixta
+ a| 
+Se recomienda que sea la misma, pero no es obligatorio. La unidad más pequeña determina la capacidad de todas las unidades.
+ a| 
+Se recomienda que sea la misma, pero no es obligatorio. La unidad más pequeña determina la capacidad de todas las unidades.
+
+
+
+ a| 
+Número mínimo de unidades
+ a| 
+11
+ a| 
+Depende del nivel de RAID. RAID 0 necesita 1. RAID 1 o 10 necesita 2 (requiere un número par). El mínimo para RAID 5 es 3. El mínimo para RAID 6 es 5.
+
+
+
+ a| 
+Número máximo de unidades
+ a| 
+Hasta el límite máximo para la cabina de almacenamiento
+ a| 
+RAID 1 y 10: Hasta el límite máximo de la cabina de almacenamiento - RAID 5, 6 unidades
+
+
+
+ a| 
+Es posible elegir unidades individuales al crear un volumen
+ a| 
+No
+ a| 
+Sí
+
+
+
+ a| 
+Es posible especificar el tamaño de los segmentos al crear un volumen
+ a| 
+Sí. Compatibilidad con 128 K.
+ a| 
+Sí
+
+
+
+ a| 
+Es posible especificar las características de I/o al crear un volumen
+ a| 
+No
+ a| 
+Sí. Es compatible con sistema de archivos, base de datos, multimedia y opciones personalizadas.
+
+
+
+ a| 
+Protección ante fallos de unidad
+ a| 
+Utiliza la capacidad de conservación en cada unidad del pool para que la reconstrucción sea más rápida.
+ a| 
+Utiliza una unidad de repuesto. La reconstrucción está limitada por las IOPS de la unidad.
+
+
+
+ a| 
+Advertencia cuando se llega al límite de capacidad
+ a| 
+Sí. Es posible configurar una alerta cuando la capacidad utilizada llega a un porcentaje de la capacidad máxima.
+ a| 
+No
+
+
+
+ a| 
+Compatibilidad con migración a otra cabina de almacenamiento
+ a| 
+No Requiere migrar a un grupo de volúmenes en primer lugar.
+ a| 
+Sí
+
+
+
+ a| 
+Tamaño de segmentos dinámico (DSS)
+ a| 
+No
+ a| 
+Sí
+
+
+
+ a| 
+Es posible cambiar el nivel de RAID
+ a| 
+No
+ a| 
+Sí
+
+
+
+ a| 
+Ampliación de volumen (aumentar capacidad)
+ a| 
+Sí
+ a| 
+Sí
+
+
+
+ a| 
+Ampliación de capacidad (añadir capacidad)
+ a| 
+Sí
+ a| 
+Sí
+
+
+
+ a| 
+Reducción de capacidad
+ a| 
+Sí
+ a| 
+No
+
+|===
+[NOTE]
+====
+Los tipos de unidades mixtas (HDD, SSD) no son compatibles con pools o grupos de volúmenes.
+
+====

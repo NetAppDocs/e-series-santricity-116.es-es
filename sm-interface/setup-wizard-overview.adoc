@@ -1,0 +1,27 @@
+---
+permalink: sm-interface/setup-wizard-overview.html 
+sidebar: sidebar 
+keywords: setup wizard, configure, storage, array, hardware, host, application workload, alert, autosupport 
+summary: Utilice el asistente de configuración para configurar la cabina de almacenamiento, incluido el hardware, los hosts, las aplicaciones, las cargas de trabajo, Pools, alertas y AutoSupport. 
+---
+= Información general del asistente de configuración
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Utilice el asistente de configuración para configurar la cabina de almacenamiento, incluido el hardware, los hosts, las aplicaciones, las cargas de trabajo, Pools, alertas y AutoSupport.
+
+Cuando se abre por primera vez System Manager, aparece el asistente de configuración.
+
+El asistente de configuración le solicita que realice tareas de configuración básicas, como asignar un nombre a la cabina de almacenamiento, configurar los hosts, seleccionar aplicaciones y crear pools de almacenamiento.
+
+Si cancela el asistente, no podrá volver a ejecutarlo manualmente.
+
+El asistente se vuelve a ejecutar automáticamente cuando abre System Manager o actualiza el explorador y se cumple _al menos una_ de las siguientes condiciones:
+
+* No se detectan pools ni grupos de volúmenes.
+* No se detectan cargas de trabajo.
+* No hay notificaciones configuradas.
+

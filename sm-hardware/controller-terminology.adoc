@@ -1,0 +1,117 @@
+---
+permalink: sm-hardware/controller-terminology.html 
+sidebar: sidebar 
+keywords: controller, terms, storage, array 
+summary: Conozca la forma en que los términos de controladoras se aplican a su cabina de almacenamiento. 
+---
+= Terminología de la controladora
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Conozca la forma en que los términos de controladoras se aplican a su cabina de almacenamiento.
+
+[cols="1a,3a"]
+|===
+| Componente | Descripción 
+
+
+ a| 
+Controladora
+ a| 
+Una controladora consta de una placa, un firmware y un software. Controla las unidades e implementa las funciones de System Manager.
+
+
+
+ a| 
+Bandeja de controladoras
+ a| 
+Una bandeja de controladoras consta de un conjunto de unidades y uno o más contenedores de controladoras. Un contenedor de controladora contiene las controladoras, las tarjetas de interfaz del host (HIC) y las baterías.
+
+
+
+ a| 
+DHCP
+ a| 
+El protocolo de configuración dinámica de hosts (DHCP) es un protocolo que se usa en las redes de protocolo de Internet (IP) para los parámetros de configuración de red de distribución dinámica, como las direcciones IP.
+
+
+
+ a| 
+DNS
+ a| 
+El sistema de nombres de dominio (DNS) es un sistema de nomenclatura para los dispositivos conectados a Internet o a una red privada. El servidor DNS conserva un directorio de nombres de dominio y los convierte en direcciones de protocolos de Internet (IP).
+
+
+
+ a| 
+Configuraciones dobles
+ a| 
+Se denomina "doble" a la configuración de un módulo de dos controladoras dentro de la cabina de almacenamiento. Los sistemas dobles son completamente redundantes con respecto a las controladoras, las rutas de volumen lógico y las rutas de discos. Si se produce un error en una controladora, la otra se encarga de las operaciones de I/o para mantener la disponibilidad. Los sistemas dobles también tienen ventiladores y suministros de alimentación redundantes.
+
+
+
+ a| 
+Conexiones doble total/doble parcial
+ a| 
+Las denominaciones doble total y doble parcial se relacionan con los modos de conexión. En el modo doble total, dos dispositivos se pueden comunicar de forma simultánea en ambas direcciones. En el modo doble parcial, los dispositivos se pueden comunicar en una dirección a la vez (un dispositivo envía un mensaje, mientras el otro lo recibe).
+
+
+
+ a| 
+HIC
+ a| 
+En forma opcional, se puede instalar una tarjeta de interfaz del host (HIC) en un contenedor de controladora. Los puertos de host que están incorporados en la controladora se denominan puertos de host de la placa base. Los puertos de host que están incorporados en HIC se denominan puertos de HIC.
+
+
+
+ a| 
+Respuesta ICMP PING
+ a| 
+El protocolo de mensajes de control de Internet (ICMP) es un protocolo que usan los sistemas operativos de ordenadores conectados a una red para enviar mensajes. Los mensajes ICMP determinan si se puede acceder a un host y cuánto tiempo lleva trasladar paquetes desde o hacia ese host.
+
+
+
+ a| 
+Dirección MAC
+ a| 
+Ethernet utiliza identificadores de control de acceso de medios (direcciones MAC) para distinguir entre canales lógicos distintos que conectan dos puertos en la misma interfaz de red de transporte físico.
+
+
+
+ a| 
+cliente de gestión
+ a| 
+Un cliente de gestión es el equipo donde se instala un explorador para acceder a System Manager.
+
+
+
+ a| 
+MTU
+ a| 
+Una unidad de transmisión máxima (MTU) es el paquete o el marco de mayor tamaño que se pueden enviar en una red.
+
+
+
+ a| 
+NTP
+ a| 
+El protocolo de tiempo de redes (NTP) es un protocolo de redes para la sincronización del reloj entre los sistemas informáticos en las redes de datos.
+
+
+
+ a| 
+Configuraciones simples
+ a| 
+Se denomina simple a la configuración de módulos de controladora única en la cabina de almacenamiento. Un sistema simple no ofrece redundancia de la controladora ni de la ruta del disco, pero tiene ventiladores y suministros de alimentación redundantes.
+
+
+
+ a| 
+VLAN
+ a| 
+Una red de área local virtual (VLAN) es una red lógica que se comporta como si estuviera físicamente separada de otras redes compatibles con los mismos dispositivos (interruptores, enrutadores, etc.).
+
+|===

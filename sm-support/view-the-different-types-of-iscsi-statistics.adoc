@@ -1,0 +1,14 @@
+---
+permalink: sm-support/view-the-different-types-of-iscsi-statistics.html 
+sidebar: sidebar 
+keywords: review, different, sets, statistics, raw, baseline, ethernet, target, local, initiator, protocol, operational, state 
+summary: 'Es posible ver diferentes conjuntos de estadísticas como estadísticas sin configurar o de base: Estadísticas de MAC Ethernet, estadísticas de TCP/IP Ethernet, estadísticas de objetivos (protocolo), estadísticas de iniciador local (protocolo), estadísticas de estado operativo de DCBX, estadísticas de TLV LLDP y estadísticas de TLV DCBX.' 
+---
+= Consulte los diferentes tipos de estadísticas de iSCSI
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible ver diferentes conjuntos de estadísticas como estadísticas sin configurar o de base: Estadísticas de MAC Ethernet, estadísticas de TCP/IP Ethernet, estadísticas de objetivos (protocolo), estadísticas de iniciador local (protocolo), estadísticas de estado operativo de DCBX, estadísticas de TLV LLDP y estadísticas de TLV DCBX.

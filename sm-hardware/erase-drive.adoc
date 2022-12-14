@@ -1,0 +1,67 @@
+---
+permalink: sm-hardware/erase-drive.html 
+sidebar: sidebar 
+keywords: erase, secure, enabled, drive, reuse, volume, group, pool, ssd cache, storage array 
+summary: Es posible borrar una unidad con la función de seguridad habilitada para poder volver a utilizarla en otro grupo de volúmenes, pool, caché SSD u otra cabina de almacenamiento. Este procedimiento restablece los atributos de seguridad de la unidad y garantiza que los datos no puedan volver a leerse. 
+---
+= Borre una unidad con la función de seguridad habilitada
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible borrar una unidad con la función de seguridad habilitada para poder volver a utilizarla en otro grupo de volúmenes, pool, caché SSD u otra cabina de almacenamiento. Este procedimiento restablece los atributos de seguridad de la unidad y garantiza que los datos no puedan volver a leerse.
+
+.Antes de empezar
+La unidad con la función de seguridad habilitada debe tener el estado sin asignar.
+
+.Acerca de esta tarea
+Utilice la opción borrado seguro solo si desea eliminar todos los datos de una unidad con la función de seguridad habilitada y restablecer los atributos de seguridad de la unidad.
+
+[CAUTION]
+====
+*Posible pérdida de datos* -- la operación borrado seguro no se puede deshacer. Asegúrese de seleccionar la unidad correcta durante el procedimiento.
+
+====
+.Pasos
+. Seleccione *hardware*.
+. Si el gráfico muestra los controladores, haga clic en *Mostrar frente de la bandeja*.
++
+El gráfico cambia y muestra las unidades en lugar de las controladoras.
+
+. Use los campos de filtro para ver todas las unidades sin asignar con la función de seguridad habilitada en la bandeja. En las listas desplegables *Mostrar unidades que son...*, seleccione *con la función de seguridad habilitada* y *sin asignar*.
++
+[NOTE]
+====
+Si todas las unidades comparten los mismos atributos físicos, el campo de filtro *Mostrar unidades...* no aparece. Si todas las unidades comparten los mismos atributos lógicos, el campo de filtro *en cualquier lugar de la matriz de almacenamiento* no aparece.
+
+La vista de bandeja muestra solo las unidades no asignadas con la función de seguridad habilitada; el resto aparecen atenuadas.
+
+====
+. Seleccione la unidad con la función de seguridad habilitada que desea borrar.
++
+[CAUTION]
+====
+*Posible pérdida de datos* -- Asegúrese de que ha seleccionado la unidad correcta. Una vez finalizada la operación borrado seguro, los datos no se pueden recuperar.
+
+====
++
+Se abre el menú contextual de la unidad.
+
+. Seleccione *borrado seguro*.
++
+La opción borrado seguro solo aparece si selecciona una unidad sin asignar con la función de seguridad habilitada.
+
++
+[NOTE]
+====
+Para las unidades SED de NVMe, debe proporcionar el PSID. Puede encontrarlo en la etiqueta de la unidad. Lo necesitará si no cuenta con la clave de bloqueo de backup.
+
+====
+. En el cuadro de diálogo Unidad de borrado seguro, lea la información importante sobre pérdida de datos.
+. Confirme la operación y haga clic en *Borrar*.
+
+
+.Resultados
+Ahora la unidad está disponible para usar en otro grupo de volúmenes o pool de discos, o bien en otra cabina de almacenamiento.

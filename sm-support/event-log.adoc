@@ -1,0 +1,27 @@
+---
+permalink: sm-support/event-log.html 
+sidebar: sidebar 
+keywords: event, log, provide, historical, record, occur, storage, array, aid, technical, support, troubleshooting, leading, failures 
+summary: El registro de eventos es un registro histórico de los eventos producidos en la cabina de almacenamiento, y sirve como ayuda para que el soporte técnico solucione problemas de eventos que pueden producir errores. 
+---
+= Registro de eventos
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+El registro de eventos es un registro histórico de los eventos producidos en la cabina de almacenamiento, y sirve como ayuda para que el soporte técnico solucione problemas de eventos que pueden producir errores.
+
+El registro de eventos es un registro detallado de los eventos producidos en la cabina de almacenamiento. Registra eventos de configuración y errores de componentes de la cabina de almacenamiento. Es posible utilizar el registro de eventos como herramienta de diagnóstico complementaria a Recovery Guru para buscar el origen de eventos de cabina de almacenamiento. Consulte siempre Recovery Guru en primer lugar si intenta recuperarse de errores de componentes en la cabina de almacenamiento.
+
+Los eventos del registro de eventos se categorizan con diferentes Estados. Los eventos para los que debe realizar acciones tienen los siguientes Estados:
+
+* Crítico
+* Advertencia
+
+
+Los eventos que son informativos y no requieren acción inmediata son los siguientes:
+
+* Informativo
+

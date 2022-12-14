@@ -1,0 +1,59 @@
+---
+permalink: sm-support/drive-firmware-upgrades.html 
+sidebar: sidebar 
+keywords: drive, firmware, control, low, level, operating, characteristics, periodically, manufacturer, release, update, add, new, features, improve, performance, fix, detects 
+summary: El firmware de la unidad controla las características de operación de bajo nivel. Periódicamente, los fabricantes de unidades publican actualizaciones del firmware de la unidad para añadir nuevas funciones, mejorar el rendimiento y corregir defectos. 
+---
+= Actualización del firmware de la unidad
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+El firmware de la unidad controla las características de operación de bajo nivel. Periódicamente, los fabricantes de unidades publican actualizaciones del firmware de la unidad para añadir nuevas funciones, mejorar el rendimiento y corregir defectos.
+
+
+
+== Actualización del firmware de la unidad en línea y sin conexión
+
+Existen dos tipos de métodos de actualización del firmware de la unidad: En línea y sin conexión.
+
+
+
+== En línea
+
+Durante una actualización en línea, las unidades se actualizan secuencialmente, una a la vez. La cabina de almacenamiento sigue procesando las operaciones de I/o mientras se produce la actualización. No es necesario detener la actividad de I/O. Si una unidad puede realizar una actualización en línea, se utiliza automáticamente este método.
+
+Las unidades que pueden realizar una actualización en línea son las siguientes:
+
+* Unidades en un pool óptimo
+* Unidades en un grupo de volúmenes redundante óptimo (RAID 1, RAID 5 y RAID 6)
+* Unidades sin asignar
+* Unidades de repuesto en espera
+
+
+Realizar una actualización del firmware de la unidad en línea puede llevar varias horas, y la cabina de almacenamiento se expone a potenciales fallos de volumen. Los fallos de volumen pueden producirse en los siguientes casos:
+
+* En un grupo de volúmenes RAID 1 o RAID 5, una unidad tiene errores cuando se está actualizando otra unidad en el grupo de volúmenes.
+* En un pool o un grupo de volúmenes RAID 6, dos unidades tienen errores cuando se está actualizando otra unidad en el pool o grupo de volúmenes.
+
+
+
+
+== Sin conexión (paralelo)
+
+Durante una actualización sin conexión, se actualizan al mismo tiempo todas las unidades del mismo tipo de unidad. Para utilizar este método, hace falta detener la actividad de I/o de los volúmenes asociados con las unidades seleccionadas. Debido a que pueden actualizarse varias unidades de forma simultánea (en paralelo), el tiempo de inactividad total se reduce significativamente. Si una unidad puede realizar únicamente una actualización sin conexión, se utiliza automáticamente este método.
+
+Las siguientes unidades DEBEN utilizar el método sin conexión:
+
+* Unidades en un grupo de volúmenes no redundante (RAID 0)
+* Unidades en un pool o grupo de volúmenes que no es óptimo
+* Unidades en caché SSD
+
+
+
+
+== Compatibilidad
+
+Cada archivo de firmware de la unidad contiene información sobre el tipo de unidad en el que se ejecuta el firmware. Es posible descargar el archivo de firmware específico solo en una unidad compatible. System Manager comprueba automáticamente la compatibilidad durante el proceso de actualización.

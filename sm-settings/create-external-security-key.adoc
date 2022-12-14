@@ -1,0 +1,103 @@
+---
+permalink: sm-settings/create-external-security-key.html 
+sidebar: sidebar 
+keywords: drive security, feature, key management server, external key, secure capable drive, storage array 
+summary: Para usar la función Drive Security con un servidor de gestión de claves, se debe crear una clave externa que se compartirá con el servidor de gestión de claves y las unidades compatibles con la función de seguridad de la cabina de almacenamiento. 
+---
+= Cree una clave de seguridad externa
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Para usar la función Drive Security con un servidor de gestión de claves, se debe crear una clave externa que se compartirá con el servidor de gestión de claves y las unidades compatibles con la función de seguridad de la cabina de almacenamiento.
+
+.Antes de empezar
+* Se deben instalar unidades compatibles con la función de seguridad en la cabina. Estas unidades pueden ser de cifrado de disco completo (FDE) o de estándar de procesamiento de información federal (FIPS).
++
+[NOTE]
+====
+Si se instalan unidades FDE y FIPS en la cabina de almacenamiento, ambas compartirán la misma clave de seguridad.
+
+====
+* Se debe habilitar la función Drive Security. De lo contrario, se abre el cuadro de diálogo *no se puede crear la clave de seguridad* durante esta tarea. Si fuera necesario, comuníquese con el proveedor de almacenamiento para pedir indicaciones sobre cómo habilitar la función Drive Security.
+* Los certificados de cliente y de servidor están disponibles en el host local, por este motivo, el servidor de la cabina de almacenamiento y de gestión de claves pueden autenticarse entre sí. El certificado de cliente valida las controladoras, mientras que el certificado de servidor valida el servidor de gestión de claves.
+
+
+.Acerca de esta tarea
+En esta tarea, se deben definir la dirección IP del servidor de gestión de claves y el número de puerto que utiliza y, luego, cargar los certificados para la gestión de claves externas.
+
+.Pasos
+. Seleccione *MENU:Settings[System]*.
+. En *Gestión de claves de seguridad*, seleccione *Crear clave externa*.
++
+[NOTE]
+====
+Si está configurada actualmente la gestión de claves internas, se muestra un cuadro de diálogo para solicitar la confirmación de que se desea cambiar a la gestión de claves externas.
+
+====
++
+Se abre el cuadro de diálogo *Crear clave de seguridad externa*.
+
+. En *conectar con el servidor de claves*, introduzca información en los siguientes campos:
++
+** *Dirección del servidor de administración de claves* -- Introduzca el nombre de dominio completo o la dirección IP (IPv4 o IPv6) del servidor utilizado para la administración de claves.
+** *Número de puerto de administración de claves* -- Introduzca el número de puerto utilizado para las comunicaciones del Protocolo de interoperabilidad de administración de claves (KMIP). El número de puerto más común que se usa para la comunicación del servidor de gestión de claves es 5696.
+** *Seleccionar certificado de cliente* -- haga clic en el primer botón *examinar* para seleccionar el archivo de certificado para los controladores de la matriz de almacenamiento.
+** *Seleccione el certificado del servidor de administración de claves* -- haga clic en el segundo botón *examinar* para seleccionar el archivo de certificado del servidor de administración de claves.
+
+
+. Haga clic en *Siguiente*.
+. En *Crear/hacer copia de seguridad de la clave*, introduzca información en el siguiente campo:
++
+** *Definir una frase de contraseña/Volver a introducir la frase de contraseña* -- Introduzca y confirme una frase de contraseña. El valor puede tener entre 8 y 32 caracteres, y debe incluir uno de los siguientes caracteres:
++
+*** Una letra mayúscula (o varias). Se debe tener en cuenta que la frase de contraseña distingue mayúsculas de minúsculas.
+*** Un número (o varios).
+*** Un carácter no alfanumérico, como !, *, @ (o varios).
+
+
+
+
++
+[CAUTION]
+====
+Asegúrese de registrar lo introducido para usarlo en el futuro. Si se necesita transferir una unidad con la función de seguridad habilitada de la cabina de almacenamiento, se debe conocer la frase de contraseña para desbloquear los datos de la unidad.
+
+====
+. Haga clic en *Finalizar*.
++
+El sistema se conecta al servidor de gestión de claves con las credenciales introducidas. Luego, se almacena una copia de la clave de seguridad en el sistema local.
+
++
+[NOTE]
+====
+La ruta del archivo descargado podría depender de la ubicación predeterminada de las descargas del explorador.
+
+====
+. Anote la frase de contraseña y la ubicación del archivo de claves descargado y, a continuación, haga clic en *Cerrar*.
++
+En la página, se muestra el siguiente mensaje con enlaces adicionales para la gestión de claves externas.
+
++
+`Current key management method: External`
+
+. Pruebe la conexión entre la cabina de almacenamiento y el servidor de gestión de claves. Para ello, seleccione *probar comunicación*.
++
+Los resultados de la prueba se muestran en el cuadro de diálogo.
+
+
+
+.Resultados
+Cuando se habilita la gestión de claves externas, se pueden crear grupos de volúmenes o pools con la función de seguridad habilitada, o bien se puede habilitar la función de seguridad en los grupos de volúmenes y pools existentes.
+
+[NOTE]
+====
+Cada vez que se apagan y se vuelven a encender las unidades, todas las unidades con la función de seguridad habilitada cambian al estado Security Locked. En este estado, no se puede acceder a los datos hasta que la controladora aplica la clave de seguridad correcta durante la inicialización de la unidad. Si alguien quita físicamente la unidad bloqueada y la instala en otro sistema, el estado Security Locked evita el acceso no autorizado de los datos.
+
+====
+.Después de terminar
+* Debe validar la clave de seguridad para asegurarse de que no se haya dañado el archivo de claves.
+

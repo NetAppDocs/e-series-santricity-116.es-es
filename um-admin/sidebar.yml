@@ -1,0 +1,26 @@
+---
+section: um-admin
+title: Interfaz principal
+entries:
+- title: Información general de Unified Manager
+  entries:
+  - title: Conceptos
+    entries:
+    - title: Información general de la interfaz
+      url: "/um-admin/home-page-unified.html"
+    - title: Exploradores compatibles
+      url: "/um-admin/supported-browsers-unified.html"
+- title: Administración de Unified Manager
+  entries:
+  - title: Conceptos
+    entries:
+    - title: Protección con contraseña de administrador
+      url: "/um-admin/administrator-password-protection-unified.html"
+  - title: Procedimientos
+    entries:
+    - title: Cambie la contraseña de administrador
+      url: "/um-admin/change-admin-password-unified.html"
+    - title: Cambiar contraseñas de las cabinas de almacenamiento
+      url: "/um-admin/change-storage-array-passwords.html"
+    - title: Gestionar los tiempos de espera de sesión
+      url: "/um-admin/manage-session-timeouts-unified.html"

@@ -1,0 +1,110 @@
+---
+permalink: sm-settings/iscsi-terminology.html 
+sidebar: sidebar 
+keywords: iscsi, storage array, terms apply 
+summary: Conozca la forma en que los términos de iSCSI se aplican a su cabina de almacenamiento. 
+---
+= Terminología de iSCSI
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Conozca la forma en que los términos de iSCSI se aplican a su cabina de almacenamiento.
+
+[cols="1a,3a"]
+|===
+| Duración | Descripción 
+
+
+ a| 
+CHAP
+ a| 
+El método de protocolo de autenticación por desafío mutuo (CHAP) valida la identidad de destinos e iniciadores durante el enlace inicial. La autenticación se basa en una clave de seguridad compartida denominada CHAP__secret____.
+
+
+
+ a| 
+Controladora
+ a| 
+Una controladora consta de una placa, un firmware y un software. Controla las unidades e implementa las funciones de System Manager.
+
+
+
+ a| 
+DHCP
+ a| 
+El protocolo de configuración dinámica de hosts (DHCP) es un protocolo que se usa en las redes de protocolo de Internet (IP) para los parámetros de configuración de red de distribución dinámica, como las direcciones IP.
+
+
+
+ a| 
+IB
+ a| 
+InfiniBand (IB) es una norma de comunicación para la transmisión de datos entre servidores de alto rendimiento y sistemas de almacenamiento.
+
+
+
+ a| 
+Respuesta ICMP PING
+ a| 
+El protocolo de mensajes de control de Internet (ICMP) es un protocolo que usan los sistemas operativos de ordenadores conectados a una red para enviar mensajes. Los mensajes ICMP determinan si se puede acceder a un host y cuánto tiempo lleva trasladar paquetes desde o hacia ese host.
+
+
+
+ a| 
+IQN
+ a| 
+Un identificador de nombre completo de iSCSI (IQN) es un nombre único para un iniciador de iSCSI o un destino iSCSI.
+
+
+
+ a| 
+Iser
+ a| 
+Las extensiones de iSCSI para RDMA (Iser) conforman un protocolo que extiende el protocolo iSCSI para operaciones a través de transporte RDMA, como InfiniBand o Ethernet.
+
+
+
+ a| 
+ISNS
+ a| 
+El servicio de nombres de almacenamiento de Internet (iSNS) es un protocolo que permite la detección, gestión y configuración automatizada de dispositivos iSCSI y Fibre Channel en redes TCP/IP.
+
+
+
+ a| 
+Dirección MAC
+ a| 
+Ethernet utiliza identificadores de control de acceso de medios (direcciones MAC) para distinguir entre canales lógicos distintos que conectan dos puertos en la misma interfaz de red de transporte físico.
+
+
+
+ a| 
+Cliente de gestión
+ a| 
+Un cliente de gestión es el equipo donde se instala un explorador para acceder a System Manager.
+
+
+
+ a| 
+MTU
+ a| 
+Una unidad de transmisión máxima (MTU) es el paquete o el marco de mayor tamaño que se pueden enviar en una red.
+
+
+
+ a| 
+RDMA
+ a| 
+El acceso directo a memoria remota (RDMA) es una tecnología que les permite a los equipos en red intercambiar datos en la memoria principal sin la participación del sistema operativo de ninguno de los equipos.
+
+
+
+ a| 
+Sesión de detección sin nombre
+ a| 
+Cuando se habilita la opción de sesiones de detección sin nombre, no se requiere que los iniciadores de iSCSI especifiquen el IQN objetivo para recuperar la información de la controladora.
+
+|===

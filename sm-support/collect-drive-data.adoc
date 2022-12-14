@@ -1,0 +1,40 @@
+---
+permalink: sm-support/collect-drive-data.html 
+sidebar: sidebar 
+keywords: collect, log, data, drives, storage, array, send, file, technical, support, analysis, task 
+summary: Puede recoger los datos de registro de todas las unidades de la cabina de almacenamiento y enviar el archivo al soporte técnico para su análisis. 
+---
+= Recoja datos de las unidades
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Puede recoger los datos de registro de todas las unidades de la cabina de almacenamiento y enviar el archivo al soporte técnico para su análisis.
+
+.Acerca de esta tarea
+Los datos de registro son información estadística que se mantiene en cada una de las unidades de la cabina de almacenamiento. El soporte técnico puede utilizar esa información para analizar el rendimiento de las unidades y solucionar los problemas que puedan existir.
+
+[NOTE]
+====
+Realice esta operación solo cuando el soporte técnico se lo indique.
+
+====
+.Pasos
+. Seleccione menú:ficha Soporte[Centro de soporte > Diagnóstico].
+. Seleccione *recoger datos de unidad*.
++
+Se muestra un cuadro de diálogo en el que se enumeran todas las unidades de la cabina de almacenamiento.
+
+. En la primera columna de la tabla, se pueden seleccionar las unidades individuales donde se desean recoger datos (haga clic en la casilla de comprobación que se encuentra junto a cada unidad) o seleccionar todas las unidades (seleccione la casilla de comprobación ubicada en el encabezado de la tabla).
++
+Para buscar unidades específicas, puede ordenar cualquiera de las columnas o escribir caracteres en el cuadro *filtro*.
+
+. Haga clic en *recoger*.
++
+El archivo se guarda en la carpeta de descargas del explorador con el nombre `drive-data.7z`.
+
+. Siga las instrucciones del soporte técnico para enviar el archivo.
+

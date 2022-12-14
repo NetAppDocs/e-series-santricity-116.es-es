@@ -1,0 +1,18 @@
+---
+permalink: sm-support/critical-events.html 
+sidebar: sidebar 
+keywords: critical, events, indicate, problem, storage, array, resolve, immediately, might, prevent, loss, data, access 
+summary: Los eventos críticos indican un problema con la cabina de almacenamiento. Si se resuelve el evento crítico de inmediato, es posible que se evite la pérdida de acceso a los datos. 
+---
+= Eventos críticos
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Los eventos críticos indican un problema con la cabina de almacenamiento. Si se resuelve el evento crítico de inmediato, es posible que se evite la pérdida de acceso a los datos.
+
+Cuando se produce un evento crítico, este se añade al registro de eventos. Todos los eventos críticos se envían a la consola de gestión SNMP o al destinatario de correo electrónico que se configuró para recibir notificaciones de alerta. Si no se conoce el ID de bandeja en el momento del evento, el ID de bandeja se muestra como "Shelf unknown".
+
+Cuando reciba un evento crítico, consulte el procedimiento de Recovery Guru para acceder a una descripción detallada de ese evento. Complete el procedimiento de Recovery Guru para corregir el evento crítico. Para corregir ciertos eventos críticos, es posible que deba comunicarse con el soporte técnico.

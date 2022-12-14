@@ -1,0 +1,104 @@
+---
+permalink: sm-hardware/hardware-terminology.html 
+sidebar: sidebar 
+keywords: hardware, terms, apply, storage 
+summary: Conozca la forma en que los términos de hardware se aplican a su cabina de almacenamiento. 
+---
+= Terminología de hardware
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Conozca la forma en que los términos de hardware se aplican a su cabina de almacenamiento.
+
+[cols="1a,3a"]
+|===
+| Componente | Descripción 
+
+
+ a| 
+Cabina de almacenamiento
+ a| 
+Una cabina de almacenamiento comprende las bandejas, las controladoras, las unidades, el software y el firmware.
+
+
+
+ a| 
+Bandeja
+ a| 
+Una bandeja es un compartimento que se instala en un armario o rack. Incluye componentes de hardware para la cabina de almacenamiento. Existen dos tipos de bandejas: Una bandeja de controladoras y una de unidades. La bandeja de controladoras incluye controladoras y unidades. Una bandeja de unidades incluye módulos de I/o (IOM) y unidades.
+
+
+
+ a| 
+Controladora
+ a| 
+Una controladora consta de una placa, un firmware y un software. Controla las unidades e implementa las funciones de System Manager.
+
+
+
+ a| 
+Unidad
+ a| 
+Una unidad es un dispositivo mecánico electromagnético o un dispositivo de memoria de estado sólido que proporciona medios de almacenamiento físico para datos.
+
+
+
+ a| 
+Bahía
+ a| 
+Una bahía es una ranura de la bandeja donde se instalan una unidad u otro componente.
+
+
+
+ a| 
+Bandeja de unidades
+ a| 
+Una bandeja de unidades, también denominada bandeja de expansión, consta de un conjunto de unidades y dos módulos de I/o (IOM). Los IOM tienen puertos SAS que permiten conectar una bandeja de unidades a una bandeja de controladoras o a otras bandejas de unidades.
+
+[NOTE]
+====
+Las bandejas de unidades no están disponibles para los sistemas de almacenamiento EF600.
+
+====
+
+
+ a| 
+Bandeja de controladoras
+ a| 
+Una bandeja de controladoras consta de un conjunto de unidades y uno o más contenedores de controladoras. Un contenedor de controladora contiene las controladoras, las tarjetas de interfaz del host (HIC) y las baterías.
+
+
+
+ a| 
+Contenedor de alimentación/ventilador
+ a| 
+Un contenedor de alimentación/ventilador es un ensamblaje que se desliza en una bandeja. Incluye un suministro de alimentación y un ventilador incorporado.
+
+
+
+ a| 
+IOM (ESM)
+ a| 
+Un IOM es un módulo de entrada/salida que incluye puertos SAS para conectar la bandeja de unidades a la bandeja de controladoras.
+
+[NOTE]
+====
+Las bandejas de unidades no están disponibles para los sistemas de almacenamiento EF600.
+
+====
+[NOTE]
+====
+En los modelos anteriores de la controladora, el IOM se denominaba módulo de servicios de entorno (ESM).
+
+====
+
+
+ a| 
+SFP
+ a| 
+Un SFP es un transceptor de factor de forma pequeño conectable.
+
+|===
